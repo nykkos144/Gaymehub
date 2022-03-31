@@ -8,13 +8,8 @@ const app = express();
 const server = createServer(app);
 const io = socketIo(server, { cors: { origin: "*" } });
 
-// const path = require("path");
 
-// app.use(express.static(path.join(__dirname + "/public")));
-
-// app.get('*', (req, res) => {
-//   res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-// });
+app.use(express.static(path.join(__dirname + "/public")));
 
 
 const chessIo = io.of('/CHESS');
