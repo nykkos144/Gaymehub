@@ -356,17 +356,8 @@ tttIo.on("connection", (socket) => {
 });
 
 
-app.get("*", (req, res) => {
-
-  let path = req.params['0'].substring(1)
-
-  if (protected.includes(path)) {
-    // Return the actual file
-    res.sendFile(`${__dirname}/build/${path}`);
-  } else {
-    // Otherwise, redirect to /build/index.html
-    res.sendFile(`${__dirname}/build/index.html`);
-  }
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 if (process.env.NODE_ENV === "production") {
