@@ -3,6 +3,7 @@ const crypto = require('crypto');
 const { createServer } = require("http");
 const express = require("express");
 const socketIo = require("socket.io");
+const cors = require("cors");
 
 const app = express();
 const server = createServer(app);
