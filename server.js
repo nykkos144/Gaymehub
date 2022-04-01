@@ -9,7 +9,7 @@ const app = express();
 const server = createServer(app);
 const io = socketIo(server, { 
   cors: { 
-    origin: "https://xxx-gaymehub-xxx.herokuapp.com" 
+    origin: "*" 
   }, 
 });
 
