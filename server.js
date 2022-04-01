@@ -7,7 +7,11 @@ const cors = require("cors");
 
 const app = express();
 const server = createServer(app);
-const io = socketIo(server, { cors: { origin: "*" } });
+const io = socketIo(server, { 
+  cors: { 
+    origin: "*" 
+  }, 
+});
 
 const path = require("path");
 

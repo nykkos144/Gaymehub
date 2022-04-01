@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1ec64027.css",
-    "main.js": "/static/js/main.f3503fa8.js",
+    "main.js": "/static/js/main.b0b9bbc6.js",
     "static/media/congr.mp4": "/static/media/congr.40395d2a9491333a867a.mp4",
     "static/media/chessimg.svg": "/static/media/chessimg.bba30cde5901ff36f5c7a8ab6e8537ee.svg",
     "static/media/Gilroy-Thin.ttf": "/static/media/Gilroy-Thin.28f856b7c4b3d473e0d1.ttf",
@@ -76,10 +76,10 @@
     "static/media/color.svg": "/static/media/color.cc485bea6ab1b888797a2cff937b998c.svg",
     "static/media/o.svg": "/static/media/o.54fda5c2fe885890d55182b04a9dc02f.svg",
     "main.1ec64027.css.map": "/static/css/main.1ec64027.css.map",
-    "main.f3503fa8.js.map": "/static/js/main.f3503fa8.js.map"
+    "main.b0b9bbc6.js.map": "/static/js/main.b0b9bbc6.js.map"
   },
   "entrypoints": [
     "static/css/main.1ec64027.css",
-    "static/js/main.f3503fa8.js"
+    "static/js/main.b0b9bbc6.js"
   ]
 }
