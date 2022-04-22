@@ -162,7 +162,7 @@ chessIo.on("connection", (socket) => {
 
   socket.on('changeTurn', (turn) => {
     let res = (turn === 1 ? 2 : 1);
-    chessIo.in(room).emit('changeTurn', res);
+    chessIo.to(room).emit('changeTurn', res);
   })
 
   socket.on('check', (pos) => {
