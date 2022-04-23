@@ -343,7 +343,7 @@ tttIo.on("connection", (socket) => {
     socket.to(room).emit('move', row, col);
   });
   socket.on('changeTurn', () => {
-    tttIo.to(room).emit('changeTurn');
+    socket.to(room).emit('changeTurn');
   });
   socket.on('lose', () => {
     socket.to(room).emit('lose');
