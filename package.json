@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "nykkos144.github.io/Gaymehub/",
+  "homepage": "nykkos144.github.io/Gaymehub",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +22,8 @@
     "path": "^0.12.7",
     "socket.io": "^4.4.0",
     "socket.io-client": "^4.4.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
